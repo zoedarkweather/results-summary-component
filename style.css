@@ -218,6 +218,7 @@ tbody tr:nth-child(4) > th {
 @media (min-width:800px) {
     .container {
         width: 800px;
+        margin-top: 10em;        
         display: grid;
         grid-template-columns: 1fr 1fr;
         border-top-left-radius: 30px;
