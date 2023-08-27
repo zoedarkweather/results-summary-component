@@ -221,8 +221,7 @@ tbody tr:nth-child(4) > th {
         margin-top: 10em;        
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
+        border-radius: 30px;        
     }
 
     .result {
@@ -243,6 +242,8 @@ tbody tr:nth-child(4) > th {
 
     .summary {
         padding-top: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
 
     table {
