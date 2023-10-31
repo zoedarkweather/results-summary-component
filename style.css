@@ -1,118 +1,121 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* colors */
 :root {
     /* primary */
     --light-red: hsl(0, 100%, 67%);
     --orange-yellow: hsl(39, 100%, 56%);
     --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
+
     /* primary - semitransparent for table bgs */
     --st-light-red: hsla(0, 100%, 67%, 0.08);
     --st-orange-yellow: hsla(39, 100%, 56%, 0.08);
     --st-green-teal: hsla(166, 100%, 37%, 0.08);
     --st-cobalt-blue: hsla(234, 85%, 45%, 0.08);
+
     /* gradiants */
     --bg-light-slate-blue: hsl(252, 100%, 67%);
     --bg-light-royal-blue: hsl(241, 81%, 54%);
     --circle-violet-blue: hsla(256, 72%, 46%, 1);
     --circle-persian-blue: hsla(241, 72%, 46%, 0);
+
     /* neutrals */
     --white: hsl(0, 0%, 100%);
     --pale-blue: hsl(221, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
+
     /* dark neutral - semitransparent for td text */
     --st-dark-gray-blue: hsla(224, 30%, 27%, 0.4);
+
+    /* typography  */
+    --font-wt-reg: 500;
+    --font-wt-bold: 700;
+    --font-wt-very-bold: 800;
 }
 
-/* typography */
-p {
-    font-size: 18px;
-    font-family: "Hanken Grotesk", sans-serif;  
-    font-weight: 500;  
-}
-
-h2, button {
-    font-size: 1.1rem;
-    font-family: "Hanken Grotesk", sans-serif; 
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-family: "Hanken Grotesk", sans-serif; 
-    font-weight: 700;
-}
-
-.score {
-    font-size: 4rem;
-    font-family: "Hanken Grotesk", sans-serif; 
-    font-weight: 800;    
-}
-
-table {
-    font-size: 18px;
-    font-family: "Hanken Grotesk", sans-serif; 
-    font-weight: 700;    
-}
-
-/* body bg */
+/* general  */
 body {
-    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Hanken Grotesk", sans-serif; 
+    font-size: 1.125rem;
+    background-color: black; /* change this */
 }
 
-/* container */
-.container {
-    background-color: var(--white);
-    width: 375px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
-/* your result section  */
-.result {
-    background: linear-gradient(to top, var(--bg-light-royal-blue), var(--bg-light-slate-blue));
-    color: var(--white);
-    text-align: center;
-    padding: 40px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
-
-.score-circle {
-    background: linear-gradient(to top, var(--circle-persian-blue), var(--circle-violet-blue));
-    width: 160px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 50%;
-}
-
-h3 {
-   margin-bottom: 15px;
-}
-
-p { 
+p {     
+    font-weight: var(--font-wt-reg);  
     color: var(--light-lavender);
 }
 
+h2, h3, button, table {
+    font-weight: var(--font-wt-bold);
+}
+
+h2 {
+    font-size: 1.3rem;  
+}
+
 .score {
+    font-size: 4rem;  
+}
+
+.wrapper {
+    max-width: 28em;
+}
+
+/* component */
+.grid-container {
+    background-color: var(--white);
+}
+
+/* result section  */
+.result {
+    padding: 2em 4em; 
+    background: linear-gradient(
+        to top, 
+        var(--bg-light-royal-blue), 
+        var(--bg-light-slate-blue)
+        );
+    color: var(--white);
+    text-align: center;    
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.score-circle {
+    background: linear-gradient(
+        to top, 
+        var(--circle-persian-blue), 
+        var(--circle-violet-blue)
+    );
+    width: 8em;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 100%;
+}
+
+.score {
+    color: var(--white);
+}
+
+.score-description {
+    margin-bottom: 0.5em;
+    font-size: 1.5rem;
+    font-weight: var(--font-wt-very-bold);
     color: var(--white);
 }
 
 /* summary section  */
 .summary {
-    background-color: var(--white);
-    color: var(--dark-gray-blue);
-    padding: 20px;   
-}
-
-.summary > h2 {
-    margin-top: 10px;
+    padding: 2em;
+    color: var(--dark-gray-blue);  
 }
 
 /* data table  */
@@ -120,30 +123,29 @@ table {
     text-align: left;
     table-layout: fixed;
     width: 95%;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     border-collapse: separate; 
-    border-spacing: 0 15px;      
+    border-spacing: 0 0.8em;      
 }
 
 th {   
     width: 65%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
 }
 
 th > img {
-    margin-right: 10px;
+    margin-right: 0.5em;
 }
 
 td {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: var(--dark-gray-blue);
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 
 th,
 td {
-    padding: 15px;
+    padding: 0.8em;
 }
 
 tbody tr:nth-child(1) > * { 
@@ -188,26 +190,33 @@ tbody tr:nth-child(4) > th {
 
 /* button  */
 .btn-continue {
-    background-color: var(--dark-gray-blue);
-    color: white;
+    display: block;
+    cursor: pointer;   
     width: 85%;
-    margin: 20px;
-    padding: 10px;
+    margin: 1em auto 0 auto;    
+    padding: 0.6em;
+    font-size: 1.1rem;
     border: none;
-    border-radius: 20px;
-    cursor: pointer;
+    border-radius: 2em;
+    color: var(--white);
+    background-color: var(--dark-gray-blue);    
 }
 
-.btn-continue:hover {
-    background: linear-gradient(to top, var(--bg-light-royal-blue), var(--bg-light-slate-blue));
+.btn-continue:hover,
+.btn-continue:focus,
+.btn-continue:active {
+    background: linear-gradient(
+        to top, 
+        var(--bg-light-royal-blue), 
+        var(--bg-light-slate-blue)
+    );
 }
 
 /* footer */
 .attribution { 
-    font-size: 11px;
-    font-family: "HankenGrotesk-Medium", sans-serif;     
+    font-size: 0.7rem;    
     text-align: center; 
-    margin-top: 4em;
+    margin-top: 2em;
     color: var(--pale-blue);
 }
 
@@ -216,18 +225,19 @@ tbody tr:nth-child(4) > th {
 }
 
 @media (min-width:800px) {
-    .container {
-        width: 800px;
-        margin-top: 10em;        
+    .wrapper {
+        width: 90%;
+        max-width: 44em;
+    }
+
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        border-radius: 30px;        
+        border-radius: 1em;        
     }
 
     .result {
-        border-radius: 30px;
-        padding-left: 75px;
-        padding-right: 75px;
+        border-radius: 1em;
     }
 
     .score {
@@ -236,25 +246,11 @@ tbody tr:nth-child(4) > th {
 
     .score-circle {
         width: 170px;
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 
     .summary {
         padding-top: 30px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-    }
-
-    table {
-        border-spacing: 0 15px;
-    }
-
-    th {
-        width: 70%;
-    }
-
-    th, td {
-        padding: 10px;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
     }
 }

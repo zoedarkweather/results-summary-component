@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-
 
 ## Overview
 
@@ -32,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/zoedarkweather/results-summary-component)
-- Live Site URL: [Vercel](https://results-summary-component-zoedarkweather.vercel.app/)
+- Solution URL: [https://github.com/zoedarkweather/results-summary-component](https://github.com/zoedarkweather/results-summary-component)
+- Live Site URL: [https://results-summary-component-zoedarkweather.vercel.app](https://results-summary-component-zoedarkweather.vercel.app/)
 
 ## My process
 
@@ -49,10 +48,9 @@ Users should be able to:
 
 I learned how to select individual table rows using nth-child. I got some practice using fetch, async functions and promises. I learned that I needed to run a dev server to access a local JSON file without getting a CORS error, and that led me to learn that there is a handy VSCOde extension for that called Live Server. Life changing info.
 
-
 ### Continued development
 
-I'd like to learn more best-practices for organizing stylesheets. I keep trying different things, but I'd like to know what the best-practices or conventions are for that and also for class names. 
+I'd like to learn more best-practices for organizing stylesheets. I keep trying different things, but I'd like to know what the best-practices or conventions are for that and also for class names.
 
 ### Useful resources
 
@@ -61,5 +59,5 @@ I'd like to learn more best-practices for organizing stylesheets. I keep trying 
 
 ## Author
 
-- [Jennifer Souza](https://github.com/zoedarkweather)
+- Github - [Jennifer Souza](https://github.com/zoedarkweather)
 - Frontend Mentor - [@zoedarkweather](https://www.frontendmentor.io/profile/zoedarkweather)

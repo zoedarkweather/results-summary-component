@@ -30,7 +30,8 @@ function populateResults(data) {
         const tdSpan1 = document.createElement("span");
         const tdSpan2 = document.createElement("span");
         
-        img.setAttribute("src", item.icon);        
+        img.setAttribute("src", item.icon);
+        img.setAttribute("alt", "");        
         thSpan.textContent = ` ${item.category}`;
         th.appendChild(img);
         th.appendChild(thSpan);
