@@ -62,6 +62,12 @@ h2 {
     font-size: 1.3rem;  
 }
 
+.screenreader-only {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
 .wrapper {
     max-width: 28em;    
 }
