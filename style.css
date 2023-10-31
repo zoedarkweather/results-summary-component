@@ -62,10 +62,6 @@ h2 {
     font-size: 1.3rem;  
 }
 
-.score {
-    font-size: 4rem;  
-}
-
 .wrapper {
     max-width: 28em;    
 }
@@ -103,13 +99,15 @@ h2 {
 }
 
 .score {
+    font-size: 4rem;  
+    font-weight: var(--font-wt-very-bold);
     color: var(--white);
 }
 
 .score-description {
     margin-bottom: 0.5em;
     font-size: 1.5rem;
-    font-weight: var(--font-wt-very-bold);
+    font-weight: var(--font-wt-bold);
     color: var(--white);
 }
 
