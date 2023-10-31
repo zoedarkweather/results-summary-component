@@ -46,7 +46,7 @@ body {
     justify-content: center;
     font-family: "Hanken Grotesk", sans-serif; 
     font-size: 1.125rem;
-    background-color: black; /* change this */
+    background-color: var(--white)
 }
 
 p {     
@@ -67,12 +67,13 @@ h2 {
 }
 
 .wrapper {
-    max-width: 28em;
+    max-width: 28em;    
 }
 
 /* component */
 .grid-container {
     background-color: var(--white);
+    box-shadow: 5px 5px 10px var(--pale-blue);
 }
 
 /* result section  */
@@ -217,11 +218,11 @@ tbody tr:nth-child(4) > th {
     font-size: 0.7rem;    
     text-align: center; 
     margin-top: 2em;
-    color: var(--pale-blue);
+    color: var(--dark-gray-blue);
 }
 
 .attribution a { 
-    color: var(--bg-light-slate-blue); 
+    color: var(--cobalt-blue); 
 }
 
 @media (min-width:800px) {
