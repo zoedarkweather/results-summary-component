@@ -69,6 +69,7 @@ h2 {
 }
 
 .wrapper {
+    width: 100%;
     max-width: 28em;    
 }
 
